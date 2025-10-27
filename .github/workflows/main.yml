@@ -27,4 +27,5 @@ jobs:
       - name: Deploy files
         run: |
           oc project lpintofsgrp-dev
-          oc apply -f ./
+          oc apply -f private.yaml
+          oc apply -f public.yaml
